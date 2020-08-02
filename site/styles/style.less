@@ -2,6 +2,60 @@
 
 @GeneralColor:#f16d7f;
 
+//  oppotiunity of LESS ))
+@width_product {
+    min-width: 170px;
+}
+@width_colum {
+    min-width: 80px;
+}
+.entry__field {
+    width: 325px;
+    height: 45px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    margin-bottom: 25px;
+    padding-left: 18px;
+}
+.text_of_button {
+    width: 71px;
+    height: 11px;
+    color: #4a4a4a;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.text_of_login_h1 {
+    color: #222222;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.text_of_login_h2 {
+    color: #222222;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.text_of_login_h3 {
+    color: #222222;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.text_of_login_h4 {
+    color: #b3b2b2;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -617,12 +671,7 @@ footer {
         }
     }
 }
-@width_product {
-    min-width: 170px;
-}
-@width_colum {
-    min-width: 80px;
-}
+
 .product__detail {
     height: 12px;
     color: #222222;
@@ -737,7 +786,6 @@ footer {
                 font-size: 14px;
                 font-weight: 700;
                 text-transform: uppercase;
-
             }
             &:hover{
                 background-color:darken(#ffffff; 2%);
@@ -763,20 +811,18 @@ footer {
         }
         &__country {
             select {
-                width: 355px;
+                width: 346px;
                 height: 45px;
                 border: 1px solid #eaeaea;
                 background-color: #ffffff;
                 margin-bottom: 25px;
+                padding-left: 18px;
+            
             }
         }
         &__statePost {
             input {
-                width: 355px;
-                height: 45px;
-                border: 1px solid #eaeaea;
-                background-color: #ffffff;
-                margin-bottom: 25px;
+                .entry__field()
             }
         }
         button {
@@ -786,13 +832,298 @@ footer {
             text-transform: uppercase;
             text-align: center;
             background-color: #ffffff;
+                span {
+                    .text_of_button();
+                }
 
             &:hover {
                 background-color: darken(#ffffff, 2%);
             }
         }
+    .discount {
+        display: flex;
+        flex-direction: column;
+            &__text {
+                height: 13px;
+                color: #222222;
+                font-family: Lato;
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+            }
+            &__enter {
+                height: 14px;
+                color: #000000;
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: 300;
+                margin-bottom: 30px;
+
+            }
+            &__place {
+                input {
+                    .entry__field();
+                }
+            }
+            button {
+                width: 125px;
+                height: 35px;
+                border: 1px solid #eaeaea;
+                background-color: #ffffff;
+                    span {
+                        .text_of_button();
+                    }
+                    &:hover {
+                        background-color: darken(#ffffff, 2%);
+                    }
+            }
+
+    }
+    .grandtotal {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        height: 230px;
+        background-color: #f5f3f3;
+            &__sub {
+                height: 12px;
+                color: #4a4a4a;
+                font-family: Lato;
+                font-size: 11px;
+                font-weight: 400;
+                text-transform: uppercase;
+                margin-top: 40px;
+                margin-right: 10px;
+                text-align: right;
+            }
+            &__general {
+                height: 16px;
+                color: #222222;
+                font-family: Lato;
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-top: 15px;
+                margin-right: 10px;
+                text-align: right;
+
+                    span {
+                        color: @GeneralColor;
+                    }
+            }
+            &__checkout {
+                height: 65px;
+                width: 273px;
+                border-top:1px solid #eaeaea;
+                margin-top: 25px;
+                    button {
+                        width: 273px;
+                        height: 50px;
+                        background-color: @GeneralColor;
+                        margin-top: 15px;
+                            span {
+                                width: 189px;
+                                height: 13px;
+                                color: #ffffff;
+                                font-family: Lato;
+                                font-size: 16px;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                            }
+                            &:hover {
+                                background-color: darken(@GeneralColor,6%);
+                            }
+                    }
+
+            }
+
+    }
 
 }
+.adress {
+    display: flex;
+    flex-direction: row;
+    margin-top: 85px;
+        span {
+            .text_of_login_h1();
+            a {
+                color: #222222;
+                text-decoration: none;
+                &:hover {
+                    color: @GeneralColor;
+                }
+            }
+        }
+        .adress__shipping {
+            margin-left: 40px;
+            &__check {
+                .text_of_login_h2();
+                margin-top: 40px;
+            }
+            &__register {
+                .text_of_login_h4();
+                margin-top: 15px;
+            }
+            &__input {
+                .text_of_login_h3();
+                margin-top: 30px;
+            }
+            &__save {
+                .text_of_login_h2();
+                margin-top: 35px;
+            }
+            &__register {
+                .text_of_login_h4();
+                margin-top: 15px;
+            }
+            &__fast {
+                .text_of_login_h4();
+                margin-top: 30px;
+            }
+            &__easy {
+                .text_of_login_h4();
+                margin-top: 10px;
+
+            }
+            button {
+                margin-top: 30px;
+                width: 180px;
+                height: 50px;
+                border: 1px solid #eaeaea;
+                background-color: #ffffff;
+                    span {
+                        height: 12px;
+                        color: #4a4a4a;
+                        font-family: Lato;
+                        font-size: 14px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                    &:hover {
+                        background-color: darken(#ffffff, 2%);
+                    }
+            }
+
+
+        }
+    .already {
+        margin-top: 60px;
+        margin-left: 290px;
+            &__register {
+                .text_of_login_h2();
+            }
+            &__log {
+                .text_of_login_h4();
+                margin-top: 20px;
+            }
+            &__email {
+                .text_of_login_h3();
+                margin-top: 25px;
+                    input {
+                        width: 390px;
+                        height: 45px;
+                        border: 1px solid #eaeaea;
+                        background-color: #ffffff;
+                        margin-top: -8px;
+                    }
+            }
+            &__password {
+                .text_of_login_h3();
+                margin-top: 15px;
+                    input {
+                        width: 390px;
+                        height: 45px;
+                        border: 1px solid #eaeaea;
+                        background-color: #ffffff;
+                        margin-top: -8px;
+
+                    }
+            }
+            &__required {
+                .text_of_login_h4();
+                margin-top: 20px;
+                color: #ff0d0d;  
+
+            }
+            button {
+                width: 180px;
+                height: 50px;
+                border: 1px solid #eaeaea;
+                background-color: #ffffff;
+                margin-top: 30px;
+                margin-right: 35px;
+                    span {
+                        height: 12px;
+                        color: #4a4a4a;
+                        font-family: Lato;
+                        font-size: 14px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                    &:hover {
+                        background-color: darken(#ffffff, 2%);
+                    }
+            }
+            a {
+                height: 12px;
+                color: #222222;
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                text-decoration: none;
+
+                &:hover {
+                    color: @GeneralColor;
+                }
+                
+            }
+    }
+
+}
+.information {
+    .text_of_login_h1();
+    margin-top: 75px;
+
+    // height: 301px;
+    // color: #222222;
+    // font-family: Lato;
+    // font-size: 16px;
+    // font-weight: 700;
+    // line-height: 72px;
+    // text-transform: uppercase;
+        div {
+            display: flex;
+            align-items: center;
+            height: 75px;
+            width: auto;
+            border-top: 1px solid #eaeaea;
+            border-bottom: 1px solid #eaeaea;
+        }
+        a {
+            text-decoration: none;
+            color: #222222;
+            &:hover {
+                color: @GeneralColor;
+            }
+        }
+}
+
+// SINGLE PAGE!!!!
+.slider__single {
+    height: 777px;
+    border: 1px solid #eaeaea;
+    background-color: #f7f7f7;
+        .maininfo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+}
+
 
 
 

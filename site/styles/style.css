@@ -19,6 +19,56 @@
   font-display: swap;
   src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVew8.ttf) format('truetype');
 }
+@width _product {
+  min-width: 170px;
+}
+@width _colum {
+  min-width: 80px;
+}
+.entry__field {
+  width: 325px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  margin-bottom: 25px;
+  padding-left: 18px;
+}
+.text_of_button {
+  width: 71px;
+  height: 11px;
+  color: #4a4a4a;
+  font-family: Lato;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.text_of_login_h1 {
+  color: #222222;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.text_of_login_h2 {
+  color: #222222;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.text_of_login_h3 {
+  color: #222222;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.text_of_login_h4 {
+  color: #b3b2b2;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+}
 body {
   margin: 0;
   padding: 0;
@@ -546,12 +596,6 @@ footer .foot_colum a:first-child {
   font-family: "Lato - Bold";
   font-weight: 700;
 }
-@width _product {
-  min-width: 170px;
-}
-@width _colum {
-  min-width: 80px;
-}
 .product__detail {
   height: 12px;
   color: #222222;
@@ -676,18 +720,20 @@ footer .foot_colum a:first-child {
   margin-bottom: 25px;
 }
 .order__country select {
-  width: 355px;
+  width: 346px;
   height: 45px;
   border: 1px solid #eaeaea;
   background-color: #ffffff;
   margin-bottom: 25px;
+  padding-left: 18px;
 }
 .order__statePost input {
-  width: 355px;
+  width: 325px;
   height: 45px;
   border: 1px solid #eaeaea;
   background-color: #ffffff;
   margin-bottom: 25px;
+  padding-left: 18px;
 }
 .order button {
   height: 35px;
@@ -697,6 +743,330 @@ footer .foot_colum a:first-child {
   text-align: center;
   background-color: #ffffff;
 }
+.order button span {
+  width: 71px;
+  height: 11px;
+  color: #4a4a4a;
+  font-family: Lato;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 .order button:hover {
   background-color: #fafafa;
+}
+.order .discount {
+  display: flex;
+  flex-direction: column;
+}
+.order .discount__text {
+  height: 13px;
+  color: #222222;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.order .discount__enter {
+  height: 14px;
+  color: #000000;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.order .discount__place input {
+  width: 325px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  margin-bottom: 25px;
+  padding-left: 18px;
+}
+.order .discount button {
+  width: 125px;
+  height: 35px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+}
+.order .discount button span {
+  width: 71px;
+  height: 11px;
+  color: #4a4a4a;
+  font-family: Lato;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.order .discount button:hover {
+  background-color: #fafafa;
+}
+.order .grandtotal {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 230px;
+  background-color: #f5f3f3;
+}
+.order .grandtotal__sub {
+  height: 12px;
+  color: #4a4a4a;
+  font-family: Lato;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-right: 10px;
+  text-align: right;
+}
+.order .grandtotal__general {
+  height: 16px;
+  color: #222222;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-right: 10px;
+  text-align: right;
+}
+.order .grandtotal__general span {
+  color: #f16d7f;
+}
+.order .grandtotal__checkout {
+  height: 65px;
+  width: 273px;
+  border-top: 1px solid #eaeaea;
+  margin-top: 25px;
+}
+.order .grandtotal__checkout button {
+  width: 273px;
+  height: 50px;
+  background-color: #f16d7f;
+  margin-top: 15px;
+}
+.order .grandtotal__checkout button span {
+  width: 189px;
+  height: 13px;
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.order .grandtotal__checkout button:hover {
+  background-color: #ee5167;
+}
+.adress {
+  display: flex;
+  flex-direction: row;
+  margin-top: 85px;
+}
+.adress span {
+  color: #222222;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.adress span a {
+  color: #222222;
+  text-decoration: none;
+}
+.adress span a:hover {
+  color: #f16d7f;
+}
+.adress .adress__shipping {
+  margin-left: 40px;
+}
+.adress .adress__shipping__check {
+  color: #222222;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.adress .adress__shipping__register {
+  color: #b3b2b2;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+.adress .adress__shipping__input {
+  color: #222222;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.adress .adress__shipping__save {
+  color: #222222;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 35px;
+}
+.adress .adress__shipping__register {
+  color: #b3b2b2;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+.adress .adress__shipping__fast {
+  color: #b3b2b2;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.adress .adress__shipping__easy {
+  color: #b3b2b2;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.adress .adress__shipping button {
+  margin-top: 30px;
+  width: 180px;
+  height: 50px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+}
+.adress .adress__shipping button span {
+  height: 12px;
+  color: #4a4a4a;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.adress .adress__shipping button:hover {
+  background-color: #fafafa;
+}
+.adress .already {
+  margin-top: 60px;
+  margin-left: 290px;
+}
+.adress .already__register {
+  color: #222222;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.adress .already__log {
+  color: #b3b2b2;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.adress .already__email {
+  color: #222222;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+.adress .already__email input {
+  width: 390px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  margin-top: -8px;
+}
+.adress .already__password {
+  color: #222222;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+.adress .already__password input {
+  width: 390px;
+  height: 45px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  margin-top: -8px;
+}
+.adress .already__required {
+  color: #b3b2b2;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 20px;
+  color: #ff0d0d;
+}
+.adress .already button {
+  width: 180px;
+  height: 50px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  margin-top: 30px;
+  margin-right: 35px;
+}
+.adress .already button span {
+  height: 12px;
+  color: #4a4a4a;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.adress .already button:hover {
+  background-color: #fafafa;
+}
+.adress .already a {
+  height: 12px;
+  color: #222222;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+}
+.adress .already a:hover {
+  color: #f16d7f;
+}
+.information {
+  color: #222222;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 75px;
+}
+.information div {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  width: auto;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+.information a {
+  text-decoration: none;
+  color: #222222;
+}
+.information a:hover {
+  color: #f16d7f;
+}
+.slider__single {
+  height: 777px;
+  border: 1px solid #eaeaea;
+  background-color: #f7f7f7;
+}
+.slider__single .maininfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

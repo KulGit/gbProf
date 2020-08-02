@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ShoppingCart</title>
+    <title>Checkout</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/861689887d.js" crossorigin="anonymous"></script>
 </head>
@@ -45,126 +45,53 @@
 </div>
 
 <div class="container">
+    <div class="adress">
+        <div>
+            <span> <a href="#">01.   Shipping Adress</a></span>
+            <div class="adress__shipping">
+                <div class="adress__shipping__check">Check as a guest or register</div>
+                <div class="adress__shipping__register">Register with us for future convenience</div>
+                <div class="adress__shipping__input">
+                    <input type="radio" name="login" value="guest"> checkout as guest <br>
+                    <input type="radio" name="login" value="login_in"> register
+                </div>
+                <div class="adress__shipping__save">register and save time!</div>
+                <div class="adress__shipping__register">Register with us for future convenience</div>
+                <div class="adress__shipping__fast">Fast and easy checkout</div>
+                <div class="adress__shipping__easy">Easy access to your order history and status</div>
+                <div>
+                    <button> <span>Continue</span></button>
+                </div>
+            </div>
     
-    <div class="product__detail">
-        <div>Product Details</div>
-        <div>unite Price</div>
-        <div>Quantity</div>
-        <div>shipping</div>
-        <div>Subtotal</div>
-        <div>Action</div>
-    </div>
-    <div class="dress__block">
-        <div class="dress__block__detail">
-            <img src="img/Product1.png" alt="">
-            <div class="dress__block__detail__name">
-                <div>People  T-shirt</div>
-                <div class="dress__block__detail__name__color">Color:   <span>Red</span></div>
-                <div class="dress__block__detail__name__size">Size:   <span>Xll</span> </div>	
+        </div>
+    
+        <div class="already">
+            <div class="already__register">Already registed?</div>
+            <div class="already__log">Please log in below</div>
+            <div class="already__email">
+                EMAIL ADDRESS <br><br>
+                <input type="email">
+            </div>
+            <div class="already__password">
+                PASSWORD <br><br>
+                <input type="password">
+            </div>
+            <div class="already__required">* Required Fileds</div>
+            <div>
+                <button> <span>Log in</span></button><a href="#">Forgot Password ?</a>
             </div>
         </div>
-        <div>$150</div>
-        <div class="dress__count">
-            <input type="text" value="2">
-        </div>
-        <div>FREE</div>
-        <div>$300</div>
-        <div>
-            <img src="img/delete_button.png">
-        </div>
+
+    </div>
+    <div class="information">
+        <div><a href="#">02.   Billing information</a></div>
+        <div><a href="#">03.   Shipping information</a></div>
+        <div><a href="#">04.   Shipping method</a></div>
+        <div><a href="#">05.   Payment method</a></div>
+        <div><a href="#">06.   Order review</a></div>
     </div>
     
-    <div class="dress__block">
-        <div class="dress__block__detail">
-            <img src="img/Product2.png" alt="">
-            <div class="dress__block__detail__name">
-                <div>People  T-shirt</div>
-                <div class="dress__block__detail__name__color">Color:   <span>Red</span></div>
-                <div class="dress__block__detail__name__size">Size:   <span>Xll</span> </div>	
-            </div>
-        </div>
-        <div>$150</div>
-        <div class="dress__count">
-            <input type="text" value="2">
-        </div>
-        <div>FREE</div>
-        <div>$300</div>
-        <div>
-            <img src="img/delete_button.png">
-        </div>
-
-    </div>
-    <div class="dress__block">
-        <div class="dress__block__detail">
-            <img src="img/Product3.png" alt="">
-            <div class="dress__block__detail__name">
-                <div>People  T-shirt</div>
-                <div class="dress__block__detail__name__color">Color:   <span>Red</span></div>
-                <div class="dress__block__detail__name__size">Size:   <span>Xll</span> </div>	
-            </div>
-        </div>
-        <div>$150</div>
-        <div class="dress__count">
-            <input type="text" value="2">
-        </div>
-        <div>FREE</div>
-        <div>$300</div>
-        <div>
-            <img src="img/delete_button.png">
-        </div>
-    </div>
-    <div class="shopping">
-        <div class="shopping__button">
-            <span>shopping cart</span>
-        </div>
-        <div class="shopping__button">
-            <span>shopping</span> 
-        </div>
-    </div>
-    <div class="order">
-        <div class="orderMain">
-            <div class="order__ship">Shipping Adress</div>
-            <div class="order__country">
-                <select name="country">
-                    <option value="Россия">Россия</option>
-                    <option selected value="Bangladesh">Bangladesh</option>
-                    <option value="Африка">Африка</option>
-                </select>
-            </div>
-            <div class="order__statePost">
-                <input type="text" placeholder="State">
-            </div>
-            <div class="order__statePost">
-                <input type="text" placeholder="Postcode/ZIP">
-            </div>
-            <div>
-                <button> <span>get a quote</span></button>
-            </div>
-        </div>
-
-        <div class="discount">
-            <div class="discount__text">coupon  discount</div>
-            <div class="discount__enter">Enter your coupon code if you have one</div>
-            <div class="discount__place">
-                <input type="text" placeholder="State">
-            </div>
-            <div>
-                <button> <span>Apply coupon</span></button>
-            </div>
-        </div>
-
-        <div class="grandtotal">
-            <div class="grandtotal__sub">Sub total         $900</div>
-            <div class="grandtotal__general">GRAND TOTAL <span>$900</span></div>
-            <div class="grandtotal__checkout">
-                <button><span>proceed to checkout</span></button>
-            </div>
-        </div>
-
-    </div>
-
-
-
 </div>
 
     
