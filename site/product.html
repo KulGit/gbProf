@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/861689887d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="header container">
+    <div class="logo">Bran<span>d</span></div>
+
+    <form method="get" class="search">
+        <button class="search__browse" name="Browse" id="">Browse <i class="fas fa-caret-down"></i></button>
+        <input type="text" name="search" placeholder="Search for Item...">
+        <button><i class="fas fa-search"></i></button>
+    </form>
+
+    <img src="img/cart.png" alt="cart" class="header__cart">
+    <button name="accountBar" class="header__account-bar">My Account <i class="fas fa-caret-down"></i></button>
+</div>
+
+<div class="headerLine"></div>
+
+<div class="topNav">
+    <a href="#">Home</a>
+    <a href="#">Man</a>
+    <a href="#">Women</a>
+    <a href="#">Kids</a>
+    <a href="#">Accoseriese</a>
+    <a href="#">Featured</a>
+    <a href="#">Hot Deals </a>
+</div>
+
+<div class="topArrivals">
+    <div class="container">
+        <div class="topArriv">
+            New Arrivals 
+        </div>
+        <div class="topArriv__select">
+            Home / Men / New Arrivals
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product__wrapper">
+        <div class="product__menu">
+            <div class="product__menu__item">
+                <div class="product__menu__line"></div>            
+                <input type="checkbox" id="category">
+                <label for="category">Category</label>
+                <div class="category box_collapse" >
+                    <ul> <br>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Denim</a></li>
+                        <li><a href="#">Hoodies & Sweatshirts</a></li>
+                        <li><a href="#">Jackets & Coats</a></li>
+                        <li><a href="#">Pants</a></li>
+                        <li><a href="#">Polos</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Shorts</a></li>
+                        <li><a href="#">Sweaters & Knits</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Tanks</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product__menu__item">
+                <div class="product__menu__line"></div>            
+                <input type="checkbox" id="brand">
+                <label for="brand">Brand</label>
+                <div class="brand box_collapse">
+                    <ul> <br>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Denim</a></li>
+                        <li><a href="#">Hoodies & Sweatshirts</a></li>
+                        <li><a href="#">Jackets & Coats</a></li>
+                        <li><a href="#">Pants</a></li>
+                        <li><a href="#">Polos</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Shorts</a></li>
+                        <li><a href="#">Sweaters & Knits</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Tanks</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="product__menu__item">
+                <div class="product__menu__line"></div>            
+                <input type="checkbox" id="designer">
+                <label for="designer">Designer</label>
+                <div class="designer box_collapse">
+                    <ul> <br>
+                        <li><a href="#">Menu 3.1</a></li>
+                        <li><a href="#">Menu 3.2</a></li>
+                        <li><a href="#">Menu 3.3</a></li>
+                        <li><a href="#">Menu 3.4</a></li>
+                        <li><a href="#">Menu 3.5</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="product__choose">
+            <div class="product__choose__feature">
+                <div class="product__choose__feature__trend">
+                    <div class="title">Trending now</div>
+                    <div class="subtitle">Bohemian    |    Floral    |    Lace</div>
+                    <div class="subtitle">Floral    |    Lace    |    Bohemian</div>
+                </div>
+                <div class="product__choose__feature__size">
+                    <div class="title">Size</div>
+                    <div>
+                        <ul>
+                            <li>
+                                <input type="checkbox">
+                                <label>XXS</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>XS</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>S</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>M</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>L</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>XL</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>XXL</label>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+                <div class="product__choose__feature__price">
+                    <div class="title">Price</div>
+                </div>
+            </div>
+            <div class="back__sort">
+                <div class="back__sort__name">
+                    <span>Sort by | Name</span>
+                    <button> <i class="fas fa-caret-down"></i></button>
+                </div>
+                <div class="back__sort__show">
+                    <span>Show | 09</span>
+                    <button> <i class="fas fa-caret-down"></i></button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="item">
+                    <div class="item__wrapper">
+                        <div class="item__wrapper__tocart">
+                            <button>
+                                <img src="img/addToCart.png" alt="">
+                                Add to Cart
+                            </button>>
+                        </div>
+                        <img class="item__wrapper__image" src="img/product_image1.jpg"><br>
+                    </div>
+                    <div class="items__view">
+                        <span class="items__name">Mango  People  T-shirt</span> <br>
+                        <span class="items__price">$52</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item__wrapper">
+                        <div class="item__wrapper__tocart">
+                            <button>
+                                <img src="img/addToCart.png" alt="">
+                                Add to Cart
+                            </button>>
+                        </div>
+                        <img class="item__wrapper__image" src="img/product_image2.jpg"><br>
+                    </div>
+                    <div class="items__view">
+                        <span class="items__name">Mango  People  T-shirt</span> <br>
+                        <span class="items__price">$52</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item__wrapper">
+                        <div class="item__wrapper__tocart">
+                            <button>
+                                <img src="img/addToCart.png" alt="">
+                                Add to Cart
+                            </button>>
+                        </div>
+                        <img class="item__wrapper__image" src="img/product_image3.jpg"><br>
+                    </div>
+                    <div class="items__view">
+                        <span class="items__name">Mango  People  T-shirt</span> <br>
+                        <span class="items__price">$52</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item__wrapper">
+                        <div class="item__wrapper__tocart">
+                            <button>
+                                <img src="img/addToCart.png" alt="">
+                                Add to Cart
+                            </button>>
+                        </div>
+                        <img class="item__wrapper__image" src="img/product_image4.jpg"><br>
+                    </div>
+                    <div class="items__view">
+                        <span class="items__name">Mango  People  T-shirt</span> <br>
+                        <span class="items__price">$52</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item__wrapper">
+                        <div class="item__wrapper__tocart">
+                            <button>
+                                <img src="img/addToCart.png" alt="">
+                                Add to Cart
+                            </button>>
+                        </div>
+                        <img class="item__wrapper__image" src="img/product_image5.jpg"><br>
+                    </div>
+                    <div class="items__view">
+                        <span class="items__name">Mango  People  T-shirt</span> <br>
+                        <span class="items__price">$52</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item__wrapper">
+                        <div class="item__wrapper__tocart">
+                            <button>
+                                <img src="img/addToCart.png" alt="">
+                                Add to Cart
+                            </button>>
+                        </div>
+                        <img class="item__wrapper__image" src="img/product_image6.jpg"><br>
+                    </div>
+                    <div class="items__view">
+                        <span class="items__name">Mango  People  T-shirt</span> <br>
+                        <span class="items__price">$52</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item__wrapper">
+                        <div class="item__wrapper__tocart">
+                            <button>
+                                <img src="img/addToCart.png" alt="">
+                                Add to Cart
+                            </button>>
+                        </div>
+                        <img class="item__wrapper__image" src="img/product_image7.jpg"><br>
+                    </div>
+                    <div class="items__view">
+                        <span class="items__name">Mango  People  T-shirt</span> <br>
+                        <span class="items__price">$52</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item__wrapper">
+                        <div class="item__wrapper__tocart">
+                            <button>
+                                <img src="img/addToCart.png" alt="">
+                                Add to Cart
+                            </button>>
+                        </div>
+                        <img class="item__wrapper__image" src="img/product_image8.jpg"><br>
+                    </div>
+                    <div class="items__view">
+                        <span class="items__name">Mango  People  T-shirt</span> <br>
+                        <span class="items__price">$52</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item__wrapper">
+                        <div class="item__wrapper__tocart">
+                            <button>
+                                <img src="img/addToCart.png" alt="">
+                                Add to Cart
+                            </button>>
+                        </div>
+                        <img class="item__wrapper__image" src="img/product_image9.jpg"><br>
+                    </div>
+                    <div class="items__view">
+                        <span class="items__name">Mango  People  T-shirt</span> <br>
+                        <span class="items__price">$52</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product__sites">
+                <div class="product__sites__number">
+                    <div>
+                        <a href="#">1</a>&nbsp
+                        <a href="#">2</a>&nbsp
+                        <a href="#">3</a>&nbsp
+                        <a href="#">4</a>&nbsp
+                        <a href="#">5</a>&nbsp
+                        <a href="#">6</a>&nbsp
+                        <a href="#"> .....20</a>
+                    </div>
+                </div>
+                <div class="product__sites__view">
+                    <span>View All</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="product__offer">
+    <div class="container">
+
+        <div class="product__offer__banner">
+            <div>Free Delivery</div>
+            <div>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</div>
+        </div>
+
+        <div class="product__offer__banner">
+            <div>Sales & discounts</div>
+            <div>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</div>
+        </div>
+
+        <div class="product__offer__banner">
+            <div>Quality assurance</div>
+            <div>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="subcribe">
+    <div class="container">
+        <div class="sub__review">
+            <div class="sub__review__person">
+                <img src="img/sub_review_person.png">
+            </div>
+            <div class="sub__review__text">
+                <i>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, 
+                a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</i>
+                <div> Bin Burhan</div>
+                <div> Dhaka, Bd</div>
+            </div>
+        </div>
+        <div class="sub__line">
+            
+        </div>
+        
+        <div class="sub__form">
+            <div>
+                <div class="sub__form__text">
+                    <div>Subscribe</div>
+                    <div>FOR OUR NEWLETTER AND PROMOTION</div>    
+                    
+                </div>
+                <div class="sub__form__enter">
+                    <input type="text" placeholder="Enter Your Email">
+                    <button> <span>Subscribe</span> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="container">
+    <div class="foot_wrapper">
+        <div class="logo">Bran<span>d</span></div>
+        <div class="foot__text1">
+            Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate
+            multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of
+            processes and cross-unit partnerships.
+        </div><br>
+        <div class="foot__text2">
+            Efficiently plagiarize 24/365 action items and focused infomediaries.
+            Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+        </div>
+    </div>
+    <div class="foot_colum">
+        COMPANY
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">How It Works</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="foot_colum">
+        INFORMATION
+        <a href="#">Tearms & Condition</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">How to Buy</a>
+        <a href="#">How to Sell</a>
+        <a href="#">Promotion</a>
+    </div>
+    <div class="foot_colum">
+        SHOP CATEGORY
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Child</a>
+        <a href="#">Apparel</a>
+        <a href="#">Brows All</a>
+    </div>
+</footer>
+<div class="copyright">
+    <div class="container">
+        <div class="copyright__text">
+            <div>&copy; 2017  Brand  All Rights Reserved.</div>
+        </div>
+        <div class="copyright__media">
+            <a href=""><img src="img/icon_facebook.png"></a>
+            <a href=""><img src="img/icon_twitter.png"></a>
+            <a href=""><img src="img/icon_linkedIn.png"></a>
+            <a href=""><img src="img/icon_pinterest.png"></a>
+            <a href=""><img src="img/icon_googlePlus.png"></a>
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
